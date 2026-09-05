@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#05070f">
+  <meta name="description" content="FALLEN — Tower of Fortune. Neon roguelite arcade: fall through an infinite tower, collect coins, take risks, defeat bosses.">
+  <title>FALLEN — Tower of Fortune</title>
+  <link rel="icon" href="assets/icons/play.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <canvas id="game"></canvas>
+    <div id="ui"></div>
+  </div>
+
+  <div id="loading" class="screen on">
+    <div class="logo">FALLEN</div>
+    <div class="logo-sub">TOWER OF FORTUNE</div>
+    <div class="load-wrap">
+      <div class="load-bar"><div class="load-fill" id="loadFill"></div></div>
+      <div class="load-text" id="loadText">LOADING</div>
+      <div class="load-pct" id="loadPct">0%</div>
+    </div>
+  </div>
+
+  <div id="fatal">
+    <div class="f-card">
+      <h2></h2>
+      <p></p>
+    </div>
+  </div>
+
+  <script src="https://yandex.ru/games/sdk/v2" async></script>
+  <script src="game.js"></script>
+</body>
+</html>
